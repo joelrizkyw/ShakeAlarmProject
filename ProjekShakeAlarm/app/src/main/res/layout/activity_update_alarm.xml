@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#313163"
+    android:padding="16dp"
+    tools:context=".AlarmActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtAddUpdateAlarm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bebas_neue_regular"
+                android:gravity="center"
+                android:text="Edit Alarm"
+                android:textColor="@android:color/white"
+                android:textSize="35sp" />
+
+            <TimePicker
+                android:theme="@style/TimePicker"
+                android:id="@+id/alarmUpdatePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:timePickerMode="spinner" />
+
+            <LinearLayout
+                android:id="@+id/vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtUpdateRingtone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bebas_neue_regular"
+                    android:text="Ringtone"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_spn_background">
+
+                    <Spinner
+                        android:id="@+id/spinnerUpdateRingtone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/songs_array"
+                        android:padding="12dp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnEditAlarm"
+                    android:layout_width="168dp"
+                    android:layout_height="65dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/bebas_neue_regular"
+                    android:text="Edit"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="-3dp"
+                    tools:layout_editor_absoluteY="0dp" />
+
+                <Button
+                    android:id="@+id/btnDeleteAlarm"
+                    android:layout_width="168dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/bebas_neue_regular"
+                    android:text="Delete"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

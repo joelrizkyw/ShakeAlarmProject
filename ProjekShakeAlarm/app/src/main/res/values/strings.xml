@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Shake Alarm</string>
+
+    <string name="text_empty">No alarms added</string>
+
+    <string name="AM">AM</string>
+    <string name="PM">PM</string>
+
+    <string name="jam">18</string>
+    <string name="menit">30</string>
+
+    <string-array name="songs_array">
+        <item>Choose Ringtone</item>
+        <item>Your Name</item>
+        <item>Blue Water</item>
+        <item>Hikari</item>
+        <item>Funk</item>
+        <item>Morning</item>
+    </string-array>
+</resources>
